@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="description" content="OpenClassrooms Web Development Project 2">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +19,13 @@
         <img id="logo" src="images/logo/Booki.png" alt="Logo" />
         <nav>
             <ul class="flex-row">
-                <a href="#lodging">
-                    <li>Hébergements</li>
-                </a>
-                <a href="#act">
-                    <li>Activités</li>
-                </a>
+                <li>
+                    <a href="#lodging">Hébergements</a>
+                </li>
+                <li>
+                    <a href="#act">Activités</a>
+                </li>
+                
             </ul>
         </nav>
     </header>
@@ -40,7 +41,7 @@
                 <input type="button" value=" " class="hidden" /><i class="fas fa-search hidden search-btn--small"></i>
             </form>
             <div class="filter">
-                <h3 class="filter-text">Filtres</h3>
+                <h2 class="filter-text">Filtres</h2>
                 <ul>
                     <li class="filter-btn">
                         <span class="fa-stack fa-1x">
