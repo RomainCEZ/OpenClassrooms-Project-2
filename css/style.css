@@ -292,7 +292,7 @@ li.filter-btn:hover::after {
 }
 
 .lodging, .pop {
-    padding: 27px;
+    padding: 27px 41px 27px 41px;
 }
 
 article {
@@ -334,7 +334,7 @@ article {
 }
 
 .lodging a {
-    width: 350px;
+    width: 330px;
     height: 250px;
 }
 
@@ -348,7 +348,7 @@ article {
 }
 
 .lodging img {   
-    width: 110%;
+    min-width: 300px;
 }
 
 /*
@@ -385,7 +385,7 @@ section.pop {
 
 .pop .card-text {
     width: 62%;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 .pop .card-img {
@@ -394,7 +394,7 @@ section.pop {
 }
 
 .pop img {
-    width: 220%;
+    min-width: 270px;
 }
 
 .pop article {
@@ -409,7 +409,7 @@ section.pop {
 
 .act {
     height: 560px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     margin-top: 20px;
 }
 
@@ -423,28 +423,28 @@ section.pop {
     height: 100%;
 }
 
-.card-big {
+.act-card--big {
     height: 100%;
 }
 
-.card2 {
+.act-card--2 {
     height: 46%;
 }
 
-.card3 {
+.act-card--3 {
     height: 35%;
 }
 
-.card5 {
+.act-card--5 {
     height: 40%;
 }
 
-.card6 {
+.act-card--6 {
     height: 42%;
 }
 
 .act .card {
-    margin-bottom: 45px;
+    flex: auto;
     border-radius: 25px;
     width: 22%;
 }
@@ -461,15 +461,20 @@ section.pop {
 
 .act .card-text {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    height: 40px;
-    vertical-align: middle;
+    min-height: 50px;
+    margin: 0px;
+    padding: 0 0 0 15px;
 }
 
 .act img {
-    width: 400%;
+    min-width: 300px;
 }
 
+.act-card--big img {
+    min-width: 750px;
+}
 
 .background-grey {
     background-color: #F2F2F2;
@@ -553,13 +558,19 @@ footer a:hover {
 
 @media screen and (max-width: 992px) {
 
+    .lodging {
+        width: 50%;
+    }
+
     .lodging a {
         width: 100%;
     }
 
-    .lodging img {
-        width: 210%;
+    section.pop {
+        width: 50%;
+        min-width: 0;
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -674,20 +685,8 @@ footer a:hover {
         border-radius: unset;
     }
 
-    .lodging img {
-        width: 160%;
-    }
-    
-    section.pop {
-        min-width: 0;
-    }
-
     .pop .card {
         height: 150px;
-    }
-
-    .pop img {
-        width: 270%;
     }
 
     .act-box {
@@ -707,6 +706,10 @@ footer a:hover {
 
     .act .card-img {
         height: 170px;
+    }
+
+    .act-card--big img {
+        min-width: 300px;
     }
 
     footer {
