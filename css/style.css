@@ -34,7 +34,7 @@ h3 {
 
 p {
     display: inline-block;
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 5px;
     margin-bottom: 5px;
     vertical-align: middle;
@@ -260,14 +260,16 @@ li.filter-btn:hover::after {
 
 .search-i {
     display: flex;
-    flex-direction: row;
     align-items: center;
-
 }
 
 .fa-info {
     color: #0065FC;
     font-size: 12px;
+}
+
+.info-icon {
+    margin-right: -15px;
 }
 
 .color-grey {
@@ -509,7 +511,6 @@ article {
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 5px;
-    font-size: 14px;
 }
 
 .card-title {
@@ -674,16 +675,15 @@ footer a:hover {
         padding: 18px 18px 18px 18px;
         margin-left: -10px;
         font-size: 17px;
-        border-radius: 15px 15px 15px 15px;
-    }
-
-    .info-icon {
-        display: inline-block;
-        margin-right: 10px;
+        border-radius: 15px;
     }
 
     .filter {
         flex-direction: column;
+    }
+
+    .info-icon {
+        margin-right: 0px;
     }
 
     section {
