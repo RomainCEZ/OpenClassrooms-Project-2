@@ -170,7 +170,7 @@ form {
     border-radius: 15px 0 0 15px;
 }
 
-.search-champ {
+.search-input {
     border: 2px solid #F2F2F2;
 }
 
@@ -189,12 +189,12 @@ form {
     color: white;
 }
 
-input {
+input, button {
     height: 100%;
     font-size: 16px;
     font-weight: bold;
     padding: 15px;
-    margin-left: -5px;
+    margin-left: -2px;
 }
 
 input:focus {
@@ -654,7 +654,7 @@ footer a:hover {
         padding-right: 20px;
     }
 
-    .search-champ {
+    .search-input {
         width: 100%;
     }
 
@@ -676,6 +676,7 @@ footer a:hover {
         margin-left: -10px;
         font-size: 17px;
         border-radius: 15px;
+        display: block;
     }
 
     .filter {

@@ -36,9 +36,11 @@
             <p>En plein centre ville ou en pleine nature</p>
             <form>
                 <i class="fas fa-map-marker-alt background-grey"></i>
-                <input type="search" placeholder="Marseille, France" class="search-champ"/>
-                <input type="button" value="Rechercher" class="search-btn"/>
-                <input type="button" value=" " class="hidden" /><i class="fas fa-search hidden search-btn--small"></i>
+                <input id="search" type="search" placeholder="Marseille, France" class="search-input"/>
+                <button class="search-btn"/>Rechercher</button>
+                <button class="hidden search-btn--small">
+                    <i class="fas fa-search"></i>
+                </button>
             </form>
             <div class="filter">
                 <h2 class="filter-text">Filtres</h2>
@@ -94,7 +96,6 @@
                                              sizes="(max-width: 500px) 500px, (max-width: 768px) 768px, (max-width: 992px) 500px, 500px"
                                              src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo">
                             </div>
-                            
                             <div class="card-text">
                                 <h2 class="card-title">Auberge de la Cannebière</h2>
                                 <p>Nuit à partir de 25€</p>
