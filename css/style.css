@@ -404,7 +404,7 @@ article {
 }
 
 .pop img {
-    width: 200%;
+    min-width: 200%;
 }
 
 .pop .ver-img {
@@ -721,10 +721,6 @@ footer a:hover {
 
     .pop .card {
         height: 170px;
-    }
-
-    .pop img {
-        width: 250%;
     }
     
     .pop .ver-img {
