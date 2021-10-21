@@ -62,8 +62,18 @@ a, a:hover, a:visited {
     color: black;
 }
 
-.hidden {
-    display: none;
+.background-grey {
+    background-color: #F2F2F2;
+}
+
+.background-blue {
+    color: #DEEBFF;
+    font-size: 50px;
+    margin-left: -5px;
+}
+
+.color-grey {
+    color: #F2F2F2;
 }
 
 /* 
@@ -171,34 +181,36 @@ form {
 }
 
 .search-input {
-    border: 2px solid #F2F2F2;
-}
-
-.search-btn {
-    background-color: #0065FC;
-    border: 1px solid #0065FC;
-    color: white;
-    border-radius: 0 15px 15px 0;
-}
-
-.search-btn:hover {
-    cursor: pointer;
-}
-
-.fa-search {
-    color: white;
-}
-
-input, button {
     height: 100%;
     font-size: 16px;
     font-weight: bold;
     padding: 15px;
     margin-left: -2px;
+    border: 2px solid #F2F2F2;
 }
 
-input:focus {
-    border: 2px solid #F2F2F2;
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    color: white;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-left: -2px;
+    border-radius: 0 15px 15px 0;
+}
+
+i.search-btn-icon {
+    display: none;
+}
+
+.search-btn:hover {
+    cursor: pointer;
 }
 
 .filter {
@@ -247,12 +259,6 @@ li.filter-btn:hover::after {
     transform: scaleX(1);
 }
 
-.background-blue {
-    color: #DEEBFF;
-    font-size: 50px;
-    margin-left: -5px;
-}
-
 .filter-icone {
     color: #0065FC;
     font-size: 18px;
@@ -270,10 +276,6 @@ li.filter-btn:hover::after {
 
 .info-icon {
     margin-right: -15px;
-}
-
-.color-grey {
-    color: #F2F2F2;
 }
 
 .color-grey.fa-star {
@@ -489,10 +491,6 @@ article {
     min-width: 750px;
 }
 
-.background-grey {
-    background-color: #F2F2F2;
-}
-
 .card, .card:hover {
     margin-bottom: 30px;
     border-radius: 20px;
@@ -665,18 +663,16 @@ footer a:hover {
     }
 
     .search-btn {
+        border-radius: 15px;
+        margin-left: -10px;
+    }
+
+    .search-btn-text {
         display: none;
     }
 
-    .search-btn--small {
-        background-color: #0065FC;
-        border: 1px solid #0065FC;
-        color: white;
-        padding: 18px 18px 18px 18px;
-        margin-left: -10px;
-        font-size: 17px;
-        border-radius: 15px;
-        display: block;
+    i.search-btn-icon {
+        display: inline-block;
     }
 
     .filter {
